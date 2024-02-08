@@ -5,63 +5,68 @@ h1{
     font-style: bold;
 }
 /* default text */
-p{
-    font-size: 1.2vw;
+* {
+    padding: 0px;
+    margin: 0px;
+    min-height: 50px;
+    font-size: 1.5vw;
     font-family: 'Courier New', Courier, monospace;
-    margin: 2vw;
+}
 
-}
-/* the image of me of page */
-.meImg{
-    display: flex;
-    position: absolute;
-    top: 3vw;
-    left: 63vw;
-    width: 20vw;
-    height: 20vw;
-}
 /* the background of  page */
-.baccground{
-    display: inline-flex;
+body {
     background-image: url("https://www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg");
     background-repeat: no-repeat;
-    min-width: 10vw;
+    
     background-size: cover;
     
 }
 /* top bar at page */
 .topBar{
-    max-width: 100%;
+    
     text-align: center;
-    position: absolute;
-    top: 0.5vw;
-    left: 0.5vw;
-    width: 99vw;
-    height: 7vw;
+
+    height: fit-content;
+    
     
     background-color: rgba(255, 255, 255, 0.717);
 }
-/* middle bar at page(bar under top bar) */
+/* middle bars at page(bar under top bar) */
+.midBars{
+   
+    
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 .midBar{
-    max-width: 100%;
+    padding-left: 4%;
+    padding-top: 4%;
+    
     text-align: left;
-    position: absolute;
-    top: 8vw;
-    left: 0.5vw;
-    width: 99vw;
-    height: 25vw;
+    width: 50%;
+    height: auto;
+    
+    list-style: none;
+
+    background-color: rgba(255, 255, 255, 0.717);
+}
+
+
+.midBar2{
+    display: flex;
+    text-align: left;
+    width: 50%;
+    
+
+    justify-content: center;
+    align-items: center;
     
     background-color: rgba(255, 255, 255, 0.717);
 }
-/* never used */
-.botBar{
-    max-width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 35vw;
-    left: 0.5vw;
-    width: 99vw;
-    height: 7vw;
-    
-    background-color: rgba(255, 255, 255, 0.717);
+
+/* the image of me on page */
+.meImg{    
+    width: 80%;
+    height: 80%;
 }
